@@ -23,16 +23,17 @@ h2 {
 }
 
 .upper-portion {
-    background: url("./assets/slide-3.jpg");
+    background: url("./assets/bg-2.jpg");
     width: 100%;
     background-position: center;
-    height: 120vh;
+    height: 80vh;
     transition: all .3s ease-in;
+
 }
 
-.backdrop {
-    backdrop-filter: brightness(50%);
-    height: 120vh;
+.back-drop {
+    backdrop-filter: brightness(60%);
+    height: 80vh;
     padding: 30px 50px;
 }
 
@@ -121,11 +122,13 @@ nav ul.one li a ul.inner li:hover {
 
 }
 
-.upper-portion .left-big h1 {
-    font-size: 36px;
-    line-height: 46px;
-    color: #e7272d;
-    font-family: "Cookie", cursive;
+.upper-portion h1.title {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .upper-portion .left-big p {
@@ -269,6 +272,8 @@ nav ul.one li a ul.inner li:hover {
 }
 
 .dishes {
+    margin-top: 100px;
+    margin-bottom: 100px;
     padding: 50px;
     text-align: center;
 }
@@ -347,6 +352,55 @@ nav ul.one li a ul.inner li:hover {
     color: #7e8690;
 }
 
+/* #2 */
+.dishes .dishes-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.dishes-in-cards-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dishes-in-cards-2 .dish-card-2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    opacity: 1;
+}
+
+.dishes-in-cards-2 .dish-card-2 img {
+    width: 100%;
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .pri-tle {
+    display: flex;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 19px;
+
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .pri-tle .price {
+    color: #e7272d;
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .desc {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+/* ۔۔ */
 .dishes .full-menu {
     padding: 15px 20px;
     background-color: black;
