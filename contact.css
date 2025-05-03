@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transition-bit {
+    transition: all .35s ease;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #e7272d;
+    font-family: "Cookie", cursive;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+
+}
+
+.upper-portion {
+    background: url("./assets/bg-2.jpg");
+    width: 100%;
+    background-position: center;
+    height: 80vh;
+    transition: all .3s ease-in;
+
+}
+
+.back-drop {
+    backdrop-filter: brightness(60%);
+    height: 80vh;
+    padding: 30px 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul.one {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.one li {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul.one li a {
+    text-decoration: 0;
+    margin: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    transition: all .3s cubic-bezier(0.7, 0, 0.3, 1);
+
+}
+
+nav ul.one li a:hover {
+    border-bottom: 10px solid #e7272d;
+}
+
+nav ul.one li a.more-nav-op {
+    position: relative;
+}
+
+nav ul.one li a span {
+    position: relative;
+    bottom: 1px;
+    left: 2px;
+}
+
+nav ul.one li a ul.inner {
+    background: white;
+    color: black;
+    border-top: 2px solid #e7272d;
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    display: none;
+    transition: all 2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+nav ul.one li a ul.inner-1,
+nav ul.one li a ul.inner-2 {
+    transition: all 2s cubic-bezier(0.7, 0, 0.3, 1);
+
+}
+
+nav ul.one li a ul.inner li {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 90px 15px 15px;
+    cursor: pointer;
+}
+
+nav ul.one li a ul.inner li:hover {
+    background-color: #e7272d;
+    color: white;
+}
+
+.upper-portion .left-big {
+    margin-top: 80px;
+    width: 50%;
+
+}
+
+.upper-portion h1.title {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.upper-portion .left-big p {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    color: white;
+}
+
+.menu-btn,
+.message-send {
+    padding: 15px 20px;
+    background-color: #e7272d;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-btn:hover,.message-send:hover {
+    background: #111;
+    color: white;
+}
+
+.cards-services {
+    margin: 0 50px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    z-index: 2;
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+.card-service {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.card-service img {
+    width: 60px;
+}
+
+.card-service .h2 {
+    font-size: 20px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+}
+
+.card-service p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+
+}
+
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    width: 60%;
+    margin: auto;
+}
+
+.cards-about {
+    margin: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.cards-about img {
+    width: 100%;
+
+
+}
+
+.card-about {
+    width: 33%;
+    text-align: left;
+}
+
+.card-about h3 {
+    font-size: 20px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    margin: 7px 0;
+
+}
+
+.card-about p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+.booking-background {
+    background: url(./assets/cta-bg.jpg);
+    height: 100vh;
+    text-align: center;
+    padding: 60px;
+}
+
+.booking-background h1 {
+
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.booking-background h2 {
+    width: 50%;
+    margin: auto;
+    color: white;
+
+}
+
+.booking-background button {
+    padding: 15px 20px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.booking-background button:hover {
+    background: #e7272d;
+    color: white;
+}
+
+.dishes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+.dishes h2 {
+    width: 50%;
+    margin: auto;
+}
+
+.dishes .buttons-dishes {
+
+    width: 40%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dishes .buttons-dishes button {
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+    font-weight: 600;
+    font-size: 16px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.dishes .buttons-dishes button.active {
+    color: #e7272d;
+}
+
+.dishes .dishes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.dishes-in-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.dishes-in-cards .dish-card {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    gap: 10px;
+}
+
+.dishes-in-cards .dish-card img {
+    width: 150px;
+}
+
+.dishes-in-cards .dish-card .pri-tle-desc .pri-tle {
+    display: flex;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 19px;
+
+}
+
+.dishes-in-cards .dish-card .pri-tle-desc .pri-tle .price {
+    color: #e7272d;
+}
+
+.dishes-in-cards .dish-card .pri-tle-desc .desc {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+/* #2 */
+.dishes .dishes-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.dishes-in-cards-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dishes-in-cards-2 .dish-card-2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    opacity: 1;
+}
+
+.dishes-in-cards-2 .dish-card-2 img {
+    width: 100%;
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .pri-tle {
+    display: flex;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 19px;
+
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .pri-tle .price {
+    color: #e7272d;
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .desc {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+/* ۔۔ */
+.dishes .full-menu {
+    padding: 15px 20px;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.dishes .full-menu:hover {
+    background-color: #e7272d;
+}
+
+.get-app {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    gap: 60px;
+}
+
+.get-app .left .imgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-app .left .imgs img {
+    width: 400px;
+}
+
+.get-app .left .imgs .img-2-get-app {
+    position: relative;
+    right: 2.2px;
+    width: 401.5px;
+}
+
+.get-app .right {
+    text-transform: capitalize;
+}
+
+.get-app .right>p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+    margin: 20px 0;
+
+}
+
+.get-app .right .buttons-get-app {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.get-app .right .buttons-get-app button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border: 2px solid #111;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    height: 60px;
+}
+
+.get-app .right .buttons-get-app button:hover {
+    background-color: #e7272d;
+    cursor: pointer;
+    border: 2px solid #e7272d;
+}
+
+.get-app .right .buttons-get-app button div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.get-app .right .buttons-get-app button.col-sch-oppo {
+    background-color: white;
+    color: black;
+
+
+}
+
+.get-app .right .buttons-get-app button.col-sch-oppo:hover {
+    background-color: #e7272d;
+    color: white;
+    border: 2px solid #e7272d;
+}
+
+.get-app .right .buttons-get-app button.col-sch-oppo img {
+    width: 25px;
+}
+
+.get-app .right .buttons-get-app button span {
+    font-weight: 700;
+
+}
+
+.get-app .right .buttons-get-app button img {
+    width: 40px;
+}
+
+.imgs-insta {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs-insta img {
+    width: 16%;
+}
+
+.contact-form {
+    margin: 100px 0;
+    padding: 50px;
+    text-align: center;
+
+}
+.contact-form h2{
+    margin-bottom: 30px;
+}
+.contact-form .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+
+}
+
+.contact-form .inputs input,
+.inputs textarea {
+    background: #fbf9f6;
+    height: 60px;
+    padding-left: 20px;
+    width: 48%;
+    margin: 6px 8px;
+}
+
+.contact-form .inputs input {
+    border: 0;
+}
+.contact-form .message-send{
+    margin: 20px auto;
+}
+
+.inputs textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+footer {
+    background: #151515;
+    color: #7e8690;
+    padding: 100px;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer h3,
+.highlight,
+.hours {
+    color: white;
+
+}
+
+footer .upper-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .upper-footer>div {
+    width: 30%;
+}
+
+footer h3,
+.hours {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.hours {
+    font-size: 16px;
+
+}
+
+footer .about-foot .icons-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 15px;
+}
+
+footer .about-foot .icons-bottom img,
+.icon-footer {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+footer .contact-info .contact-info-1 {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 15px 0;
+}
+
+footer .email-give {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+}
+
+footer .email-give h3 {
+    color: #7e8690;
+}
+
+footer .email-give .email-input-field-cont {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: center;
+    background: #121212;
+    padding: 5px;
+}
+
+footer .email-give .email-input-field-cont input {
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+footer .email-give .email-input-field-cont .icon-footer {
+    cursor: pointer;
+}
+
+footer .bottom-footer {
+    background-color: #121212;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .bottom-footer .right-navlinks {
+    display: flex;
+    gap: 20px;
+}
+
+footer .bottom-footer .right-navlinks span:hover {
+    color: #e7272d;
+    cursor: pointer;
+}
