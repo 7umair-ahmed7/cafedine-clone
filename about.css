@@ -168,7 +168,7 @@ nav ul.one li a ul.inner li:hover {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-   margin: 100px 0;
+    margin: 100px 0;
 }
 
 .about-section .upper-about-section .first-img {
@@ -207,14 +207,17 @@ nav ul.one li a ul.inner li:hover {
     display: block;
 
 }
-.about-section .chefs-section{
+
+.about-section .chefs-section {
     text-align: center;
     margin: 100px 0;
 }
-.about-section .chefs-section h2{
+
+.about-section .chefs-section h2 {
     width: 60%;
-    margin: auto ;
+    margin: auto;
 }
+
 .about-section .chefs-section .chefs-cards {
     display: flex;
     justify-content: space-between;
@@ -242,7 +245,7 @@ nav ul.one li a ul.inner li:hover {
     font-size: 14px;
     color: #7E8690;
     font-weight: 700;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .about-section .chefs-section .chefs-cards .chef-card p {
@@ -337,12 +340,16 @@ margin-bottom: 10px;
 .booking-background {
     background: url(./assets/cta-bg.jpg);
     height: 100vh;
-    text-align: center;
     padding: 60px;
+    margin: 0 -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
 }
 
 .booking-background h1 {
-
     color: white;
     font-size: 26px;
     font-weight: 400;
@@ -350,7 +357,6 @@ margin-bottom: 10px;
 
 .booking-background h2 {
     width: 50%;
-    margin: auto;
     color: white;
 
 }
@@ -369,6 +375,48 @@ margin-bottom: 10px;
 .booking-background button:hover {
     background: #e7272d;
     color: white;
+}
+
+.customers-review {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+
+}
+
+.customers-review p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #7E8690;
+}
+
+.customers-review .comment-person {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.customers-review h4 {
+    font-family: Cardo, serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.customers-review span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #7E8690;
 }
 
 .dishes {
