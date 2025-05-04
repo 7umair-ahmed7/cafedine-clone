@@ -23,7 +23,7 @@ h2 {
 }
 
 .upper-portion {
-    background: url("./assets/bg-2.jpg");
+    background: url("assets/bg-2.jpg");
     width: 100%;
     background-position: center;
     height: 80vh;
