@@ -23,7 +23,7 @@ h2 {
 }
 
 .upper-portion {
-    background: url("assets/bg-2.jpg");
+    background: url("./assets/bg-2.jpg");
     width: 100%;
     background-position: center;
     height: 80vh;
@@ -139,7 +139,7 @@ nav ul.one li a ul.inner li:hover {
 }
 
 .menu-btn,
-.message-send {
+.message-send,.reserve-btn {
     padding: 15px 20px;
     background-color: #e7272d;
     text-transform: uppercase;
@@ -151,125 +151,88 @@ nav ul.one li a ul.inner li:hover {
 }
 
 .menu-btn:hover,
-.message-send:hover {
+.message-send:hover,.reserve-btn:hover {
     background: #111;
     color: white;
 }
 
-
-/* about section main styles */
-.about-section {
-    padding: 70px 50px;
-
-
-}
-
-.about-section .upper-about-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 100px 0;
-}
-
-.about-section .upper-about-section .first-img {
-    height: 382px;
-    width: auto;
-}
-
-.about-section .upper-about-section .second-img {
-    height: 525px;
-    width: auto;
-
-}
-
-.about-section .upper-about-section .upper-third-sec h2 {
-    font-family: "Cardo", serif;
-    font-weight: 700;
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.about-section .upper-about-section .upper-third-sec p {
-    margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #7E8690;
-    font-family: "Open Sans", sans-serif;
-    line-height: 27.2px;
-
-}
-
-.about-section .upper-about-section .upper-third-sec span {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-family: "Cardo", serif;
-    font-weight: 700;
-    display: block;
-
-}
-
-.about-section .chefs-section {
-    text-align: center;
-    margin: 100px 0;
-}
-
-.about-section .chefs-section h2 {
-    width: 60%;
-    margin: auto;
-}
-
-.about-section .chefs-section .chefs-cards {
+.reservation-section {
+    margin: 125px 0;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
 }
 
-.about-section .chefs-section .chefs-cards .chef-card {
+.reservation-section .left {
+    width: 63%;
+}
+
+.reservation-section .left .left-inputs {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.reservation-section .left .left-inputs div {
+    margin: 15px 0;
     width: 32%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.about-section .chefs-section .chef-card img {
-    width: 100%;
+.reservation-section .left .left-inputs div input,
+.reservation-section .left .left-inputs div select {
+    padding: 12px;
+    outline: #e7272d;
 }
 
-.about-section .chefs-section .chefs-cards .chef-card h3 {
-    font-family: Cardo, serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.about-section .chefs-section .chefs-cards .chef-card h4 {
+.reservation-section .left .left-inputs label {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #7E8690;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.about-section .chefs-section .chefs-cards .chef-card p {
-    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
     font-size: 16px;
-    color: #7E8690;
     font-weight: 400;
-
+    color: #7e8690;
+    margin-bottom: 5px;
 }
 
-.about-section .about-section-btn {
-    background: #e7272d;
-    color: #fff;
-    padding: 10px 90px 10px 30px;
-    margin-left: -116px;
-    display: inline-block;
-    font-size: 20px;
-    line-height: 32px;
+.reservation-section .right {
+    width: 33%;
+    border: 2px dashed black;
+    padding: 50px;
+    text-align: center;
+    background: #f8f6f3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reservation-section .right .combine {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.reservation-section .right .combine div {
+    margin: 10px;
+}
+
+.reservation-section .right h3 {
     font-family: "Cardo", serif;
+    color: #111;
     font-weight: 700;
     text-transform: capitalize;
-    border: 0;
+    font-size: 18px;
+    line-height: 30px;
 }
 
+.reservation-section .right span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8690;
+
+}
 
 .cards-services {
     margin: 0 50px;
@@ -354,16 +317,12 @@ nav ul.one li a ul.inner li:hover {
 .booking-background {
     background: url(./assets/cta-bg.jpg);
     height: 100vh;
+    text-align: center;
     padding: 60px;
-    margin: 0 -50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
 }
 
 .booking-background h1 {
+
     color: white;
     font-size: 26px;
     font-weight: 400;
@@ -371,6 +330,7 @@ nav ul.one li a ul.inner li:hover {
 
 .booking-background h2 {
     width: 50%;
+    margin: auto;
     color: white;
 
 }
@@ -389,95 +349,6 @@ nav ul.one li a ul.inner li:hover {
 .booking-background button:hover {
     background: #e7272d;
     color: white;
-}
-
-.services-section {
-    margin: 200px 0;
-    text-align: center;
-}
-
-
-.services-section h2 {
-    width: 60%;
-    margin: auto;
-
-}
-
-.services-section .services-cards {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.services-section .services-cards .service-card {
-    width: 32%;
-    margin: 20px 0;
-
-}
-
-.services-section .services-cards .service-card img {
-    width: 55px;
-    cursor: pointer;
-}
-
-.services-section .services-cards .service-card h3 {
-    font-family: Cardo, serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-.services-section .services-cards .service-card p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27.2px;
-    color: #7e8690;
-
-}
-
-.customers-review {
-    margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    text-align: center;
-
-}
-
-.customers-review p {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 22px;
-    line-height: 38px;
-    font-weight: 400;
-    color: #7E8690;
-}
-
-.customers-review .comment-person {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-.customers-review h4 {
-    font-family: Cardo, serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.customers-review span {
-    font-weight: 400;
-    font-size: 14px;
-    color: #7E8690;
 }
 
 .dishes {
