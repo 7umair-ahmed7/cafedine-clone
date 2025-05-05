@@ -139,7 +139,9 @@ nav ul.one li a ul.inner li:hover {
 }
 
 .menu-btn,
-.message-send,.reserve-btn {
+.message-send,
+.reserve-btn,
+.read-more-btn {
     padding: 15px 20px;
     background-color: #e7272d;
     text-transform: uppercase;
@@ -151,9 +153,192 @@ nav ul.one li a ul.inner li:hover {
 }
 
 .menu-btn:hover,
-.message-send:hover,.reserve-btn:hover {
+.message-send:hover,
+.reserve-btn:hover,
+.read-more-btn:hover {
     background: #111;
     color: white;
+}
+
+.blogs-post-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    margin: 100px 0;
+
+}
+
+.blogs-post-section .left-section {
+    width: 59%;
+}
+
+.blogs-post-section .left-section h2 {
+    cursor: pointer;
+    font-size: 42px;
+
+}
+
+.blogs-post-section .left-section h2:hover {
+    color: #e7272d;
+}
+
+.blogs-post-section .left-section .blog {
+    margin-bottom: 50px;
+}
+
+.blogs-post-section .left-section .blog .below-img {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.166667px;
+    line-height: 1.7em;
+    font-size: 18px;
+    padding: 5px;
+    color: #7e8690;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.blogs-post-section .left-section .blog .below-img button {
+    font-size: 18px;
+    color: black;
+    background: #EEEEEE;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.blogs-post-section .left-section .blog .below-img button:hover {
+    color: #e7272d;
+
+}
+
+
+.blogs-post-section .left-section .blog .below-img .date {
+    padding-right: 10px;
+    border-right: 2px solid #7e8690;
+}
+
+.blogs-post-section .left-section .blog p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #7E8690;
+}
+
+.blogs-post-section .left-section .blog .read-more-btn {
+    margin: 30px 0;
+}
+
+.blogs-post-section .right-section {
+    width: 30%;
+
+}
+
+.blogs-post-section .right-section h1 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.blogs-post-section .right-section .search-box {
+    border: 1px solid #7E8690;
+    display: flex;
+    padding: 10px;
+    padding-right: 5px;
+
+}
+
+.blogs-post-section .right-section .search-box input {
+    width: 90%;
+    background: transparent;
+    border: 0;
+    height: 30px;
+    outline: 0;
+}
+
+.blogs-post-section .right-section .search-box img {
+    width: 16px;
+}
+.blogs-post-section .right-section h1{
+    margin-top: 30px;
+}
+.blogs-post-section .right-section .social-icons {
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    gap: 10px;
+    
+}
+.blogs-post-section .right-section .social-icons img{
+    
+}
+
+.blogs-post-section .right-section .cards-popular-posts {
+
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blogs-post-section .right-section .cards-popular-posts .card-popular-post {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blogs-post-section .right-section .cards-popular-posts .card-popular-post img {
+    width: 85px;
+
+}
+
+.blogs-post-section .right-section .cards-popular-posts .card-popular-post .cpp-right h4 {
+    font-family: Cardo, serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.blogs-post-section .right-section .cards-popular-posts .card-popular-post .cpp-right .date {
+    font-family: "Open Sans", sans-serif;
+    color: #7E8690;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blogs-post-section .right-section .categories div {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blogs-post-section .right-section .categories div span {
+    color: #7E8690;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blogs-post-section .right-section .popular-tags .buttons {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.blogs-post-section .right-section .popular-tags .buttons button {
+    background-color: #f8f6f2;
+    color: #827f79;
+    border: 0;
+    padding: 15px;
+    font-size: 16px;
+
+}
+
+.blogs-post-section .right-section .popular-tags .buttons button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .reservation-section {
@@ -364,7 +549,6 @@ nav ul.one li a ul.inner li:hover {
 }
 
 .dishes .buttons-dishes {
-
     width: 40%;
     margin: 50px auto;
     display: flex;
