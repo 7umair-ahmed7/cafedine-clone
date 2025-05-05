@@ -42,7 +42,14 @@ header {
     align-items: center;
     color: white;
 }
-
+nav .hamburger{
+    display: none;
+    width: 42px;
+    height: 29px;
+}
+nav ul.two{
+    display: none;
+}
 nav ul.one {
     display: flex;
     justify-content: space-between;
@@ -580,4 +587,22 @@ footer .bottom-footer .right-navlinks {
 footer .bottom-footer .right-navlinks span:hover {
     color: #e7272d;
     cursor: pointer;
+}
+
+@media  only screen and  (min-width: 950px){
+ header{
+    background-color: black;
+    margin: -30px -50px;
+        padding: 0 50px;
+ }
+ header nav ul.one {
+    display: none;
+
+ }
+ header nav .hamburger{
+    display: block;
+
+
+ }
+
 }
