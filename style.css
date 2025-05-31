@@ -36,20 +36,50 @@ h2 {
     padding: 30px 50px;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 15px 0;
 }
-nav .hamburger{
+
+header .second-nav {
+    padding: 10px 0;
+    display: none;
+}
+
+header .second-nav li {
+    list-style: none;
+    margin: 15px;
+}
+
+header .second-nav li a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27.2px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+    
+}
+header .second-nav li a:hover{
+    border-bottom: 10px solid #e7272d;
+
+}
+nav .hamburger {
     display: none;
     width: 42px;
     height: 29px;
+    cursor: pointer;
 }
-nav ul.two{
+
+nav ul.two {
     display: none;
 }
+
 nav ul.one {
     display: flex;
     justify-content: space-between;
@@ -589,20 +619,22 @@ footer .bottom-footer .right-navlinks span:hover {
     cursor: pointer;
 }
 
-@media  only screen and  (max-width: 950px){
- header{
-    background-color: black;
-    margin: -30px -50px;
+@media only screen and (max-width: 950px) {
+    header {
+        background: #111;
+        margin: -30px -50px;
         padding: 0 50px;
- }
- header nav ul.one {
-    display: none;
+    }
 
- }
- header nav .hamburger{
-    display: block;
+    header nav ul.one {
+        display: none;
+
+    }
+
+    header nav .hamburger {
+        display: block;
 
 
- }
+    }
 
 }
