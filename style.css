@@ -631,9 +631,12 @@ footer .bottom-footer .right-navlinks span:hover {
 
     header {
         background: #111;
-        margin: -30px -50px;
-        padding: 0 50px;
+        
+    
 
+    }
+    .header{
+        padding: 15px 30px;
     }
 
     header nav ul.one {
