@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .transition-bit {
     transition: all .35s ease;
 }
@@ -63,12 +68,14 @@ header .second-nav li a {
     color: white;
     text-transform: uppercase;
 
-    
+
 }
-header .second-nav li a:hover{
+
+header .second-nav li a:hover {
     border-bottom: 10px solid #e7272d;
 
 }
+
 nav .hamburger {
     display: none;
     width: 42px;
@@ -181,6 +188,7 @@ nav ul.one li a ul.inner li:hover {
     font-weight: 600;
     color: white;
     cursor: pointer;
+    margin:15px 0;
 }
 
 .menu-btn:hover {
@@ -620,10 +628,12 @@ footer .bottom-footer .right-navlinks span:hover {
 }
 
 @media only screen and (max-width: 950px) {
+
     header {
         background: #111;
         margin: -30px -50px;
         padding: 0 50px;
+
     }
 
     header nav ul.one {
@@ -635,6 +645,73 @@ footer .bottom-footer .right-navlinks span:hover {
         display: block;
 
 
+    }
+
+    .upper-portion {
+        height: 150vh;
+    }
+
+    .backdrop {
+        padding: 0;
+        height: 150vh;
+    }
+
+    .upper-portion .left-big {
+        width: 93%;
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .card-service {
+        padding: 20px;
+        line-height: 27.2px;
+    }
+
+    .about h2 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    .cards-about {
+        margin: 0;
+    }
+
+    .booking-background {
+        padding: 60px 0px;
+    }
+
+    .booking-background h2 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    .dishes {
+        padding: 120px 0;
+    }
+
+    .dishes h2 {
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .dishes-in-cards {
+        justify-content: center;
+    }
+
+    .dishes-in-cards .dish-card {
+        width: 40%;
+        padding: 10px;
+
+    }
+
+    .get-app {
+        padding: 50px 0px;
+        flex-direction: column;
     }
 
 }
