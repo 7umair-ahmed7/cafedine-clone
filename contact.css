@@ -31,17 +31,56 @@ h2 {
 
 }
 
-.back-drop {
+.backdrop {
     backdrop-filter: brightness(60%);
     height: 80vh;
     padding: 30px 50px;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 15px 0;
+}
+
+header .second-nav {
+    padding: 10px 0;
+    display: none;
+}
+
+header .second-nav li {
+    list-style: none;
+    margin: 15px;
+}
+
+header .second-nav li a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27.2px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+
+}
+
+header .second-nav li a:hover {
+    border-bottom: 10px solid #e7272d;
+
+}
+
+nav .hamburger {
+    display: none;
+    width: 42px;
+    height: 29px;
+    cursor: pointer;
+}
+
+nav ul.two {
+    display: none;
 }
 
 nav ul.one {
@@ -150,7 +189,8 @@ nav ul.one li a ul.inner li:hover {
     cursor: pointer;
 }
 
-.menu-btn:hover,.message-send:hover {
+.menu-btn:hover,
+.message-send:hover {
     background: #111;
     color: white;
 }
@@ -530,9 +570,11 @@ nav ul.one li a ul.inner li:hover {
     text-align: center;
 
 }
-.contact-form h2{
+
+.contact-form h2 {
     margin-bottom: 30px;
 }
+
 .contact-form .inputs {
     display: flex;
     flex-wrap: wrap;
@@ -554,7 +596,8 @@ nav ul.one li a ul.inner li:hover {
 .contact-form .inputs input {
     border: 0;
 }
-.contact-form .message-send{
+
+.contact-form .message-send {
     margin: 20px auto;
 }
 
@@ -675,4 +718,238 @@ footer .bottom-footer .right-navlinks {
 footer .bottom-footer .right-navlinks span:hover {
     color: #e7272d;
     cursor: pointer;
+}
+@media only screen and (max-width: 950px) {
+
+    header {
+        background: #111;
+
+
+
+    }
+
+    .header {
+        padding: 15px 30px;
+    }
+
+    header nav ul.one {
+        display: none;
+
+    }
+
+    header nav .hamburger {
+        display: block;
+
+
+    }
+
+    .upper-portion {
+        height: 80vh;
+    }
+
+    .backdrop {
+        padding: 0;
+        height: 80vh;
+    }
+
+    .upper-portion .left-big {
+        width: 93%;
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .card-service {
+        padding: 20px;
+        line-height: 27.2px;
+    }
+
+    .about h2 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    .cards-about {
+        margin: 0;
+    }
+
+    .booking-background {
+        padding: 60px 0px;
+    }
+
+    .booking-background h2 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    .dishes {
+        padding: 120px 0;
+    }
+
+    .dishes h2 {
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .dishes-in-cards {
+        justify-content: center;
+    }
+
+    .dishes-in-cards .dish-card {
+        width: 40%;
+        padding: 10px;
+
+    }
+
+    .get-app {
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+
+    .reservation-section {
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .reservation-section .left {
+        width: 100%;
+    }
+
+    .reservation-section .right {
+        width: 100%;
+    }
+
+    .dishes-in-cards-2 {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dishes-card-2 .dish-card-2 {
+        width: 80%;
+    }
+
+    .about-section .upper-about-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-section .about-section-btn {
+        margin-left: 0;
+    }
+
+    .services-section .services-cards .service-card {
+        width: 45%;
+    }
+    .contact-form .inputs input{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .upper-portion .left-big p {
+
+        font-size: 40px;
+
+    }
+
+    .cards-services {
+        flex-direction: column;
+    }
+
+    .card-service {
+        padding: 30px;
+    }
+
+    .cards-about {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .card-about {
+        width: 80%;
+    }
+
+    .dishes-in-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dishes-in-cards .dish-card {
+        width: 90%;
+    }
+
+    .get-app .right {
+        padding: 20px;
+    }
+
+    footer .upper-footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .upper-footer>div {
+        width: 100%;
+    }
+
+    footer .email-give .email-input-field-cont {
+        width: 100%;
+    }
+
+    footer .bottom-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .dishes .buttons-dishes {
+        gap: 15px;
+    }
+
+    .buttons-get-app {
+        flex-direction: column;
+    }
+
+    footer .bottom-footer .right-navlinks {
+        flex-wrap: wrap;
+    }
+
+    footer .email-give {
+        margin: 0;
+        margin-top: 50px;
+
+    }
+.about-section .chefs-section .chefs-cards{
+    flex-wrap: wrap;
+    gap: 20px;
+}    
+.about-section .chefs-section .chefs-cards .chef-card{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 450px) {
+    .get-app .left .imgs img {
+        width: 300px;
+    }
+
+    .get-app .left .imgs .img-2-get-app {
+        position: relative;
+        right: 2.2px;
+        width: 301.5px;
+    }
+
+    footer {
+        padding: 65px;
+    }
+    .customers-review{
+        width: 80%;
+    }
 }

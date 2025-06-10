@@ -313,7 +313,7 @@ nav ul.one li a ul.inner li:hover {
 
 }
 
-.blogs-post-section .right-section .social-icons img {}
+
 
 .blogs-post-section .right-section .cards-popular-posts {
 
@@ -325,7 +325,7 @@ nav ul.one li a ul.inner li:hover {
 
 .blogs-post-section .right-section .cards-popular-posts .card-popular-post {
     display: flex;
-   
+
 }
 
 .blogs-post-section .right-section .cards-popular-posts .card-popular-post img {
@@ -1116,23 +1116,27 @@ footer .bottom-footer .right-navlinks span:hover {
         flex-direction: column;
 
     }
-.left-section .blog img{
-width: 100%;
-}
+
+    .left-section .blog img {
+        width: 100%;
+    }
+
     .blogs-post-section .right-section {
         width: 100%;
     }
 
     .blogs-post-section .right-section .cards-popular-posts .card-popular-post {
         display: flex;
-      
+
         gap: 20px;
     }
+
     .blogs-post-section .left-section {
         width: 100%;
     }
-    .blogs-post-section .right-section .search-box input{
-            width: 96%;
+
+    .blogs-post-section .right-section .search-box input {
+        width: 96%;
     }
 }
 
