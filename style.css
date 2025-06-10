@@ -188,7 +188,7 @@ nav ul.one li a ul.inner li:hover {
     font-weight: 600;
     color: white;
     cursor: pointer;
-    margin:15px 0;
+    margin: 15px 0;
 }
 
 .menu-btn:hover {
@@ -631,11 +631,12 @@ footer .bottom-footer .right-navlinks span:hover {
 
     header {
         background: #111;
-        
-    
+
+
 
     }
-    .header{
+
+    .header {
         padding: 15px 30px;
     }
 
@@ -717,4 +718,65 @@ footer .bottom-footer .right-navlinks span:hover {
         flex-direction: column;
     }
 
+}
+
+@media only screen and (max-width: 770px) {
+    .upper-portion .left-big p {
+
+        font-size: 40px;
+
+    }
+    .cards-services{
+        flex-direction: column;
+    }
+    .card-service{
+        padding: 30px;
+    }
+    .cards-about{
+        flex-direction: column;
+    align-items: center;
+margin-bottom: 80px;
+    }
+    .card-about{
+        width: 80%;
+    }
+.dishes-in-cards{
+    flex-direction: column;
+    align-items: center;
+}
+.dishes-in-cards .dish-card{
+    width: 90%;
+}
+.get-app .right{
+    padding: 20px;
+}
+footer .upper-footer {
+    flex-direction: column;
+    gap: 50px;
+}
+footer .upper-footer>div {
+    width: 100%;
+}
+footer .email-give .email-input-field-cont {
+    width: 100%;
+}
+footer .bottom-footer{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.dishes .buttons-dishes {
+    gap: 15px;
+}
+.buttons-get-app{
+    flex-direction: column;
+}
+footer .bottom-footer .right-navlinks {
+    flex-wrap: wrap;
+}
+footer .email-give{
+    margin: 0;
+    margin-top: 50px;
+    
+}
 }
