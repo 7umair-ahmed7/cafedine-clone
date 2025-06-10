@@ -779,13 +779,15 @@ footer .bottom-footer .right-navlinks span:hover {
     .reservation-section .right {
         width: 100%;
     }
-    .dishes-in-cards-2{
+
+    .dishes-in-cards-2 {
         flex-direction: column;
-    padding: 30px;
-    align-items: center;
-    gap: 20px;
+        padding: 30px;
+        align-items: center;
+        gap: 20px;
     }
-    .dishes-card-2 .dish-card-2{
+
+    .dishes-card-2 .dish-card-2 {
         width: 80%;
     }
 
