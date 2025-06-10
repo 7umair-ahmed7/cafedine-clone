@@ -1132,13 +1132,29 @@ footer .bottom-footer .right-navlinks span:hover {
         margin-top: 50px;
 
     }
-.about-section .chefs-section .chefs-cards{
-    flex-wrap: wrap;
-    gap: 20px;
-}    
-.about-section .chefs-section .chefs-cards .chef-card{
-    width: 100%;
-}
+
+    .about-section .chefs-section .chefs-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .about-section .chefs-section .chefs-cards .chef-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-section .services-cards .service-card {
+        width: 100%;
+    }
+
+    .about-section .chefs-section h2,
+    .services-section h2 {
+        width: 100%;
+    }
+    .customers-review{
+        width: 90%;
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -1155,7 +1171,8 @@ footer .bottom-footer .right-navlinks span:hover {
     footer {
         padding: 65px;
     }
-    .customers-review{
+
+    .customers-review {
         width: 80%;
     }
 }
