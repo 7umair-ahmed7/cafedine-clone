@@ -1,0 +1,1181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transition-bit {
+    transition: all .35s ease;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #e7272d;
+    font-family: "Cookie", cursive;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+
+}
+
+.upper-portion {
+    background: url("assets/bg-2.jpg");
+    width: 100%;
+    background-position: center;
+    height: 80vh;
+    transition: all .3s ease-in;
+
+}
+
+.backdrop {
+    backdrop-filter: brightness(60%);
+    height: 80vh;
+    padding: 30px 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px 0;
+}
+
+header .second-nav {
+    padding: 10px 0;
+    display: none;
+}
+
+header .second-nav li {
+    list-style: none;
+    margin: 15px;
+}
+
+header .second-nav li a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27.2px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+
+}
+
+header .second-nav li a:hover {
+    border-bottom: 10px solid #e7272d;
+
+}
+
+nav .hamburger {
+    display: none;
+    width: 42px;
+    height: 29px;
+    cursor: pointer;
+}
+
+nav ul.two {
+    display: none;
+}
+
+nav ul.one {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.one li {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul.one li a {
+    text-decoration: 0;
+    margin: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    transition: all .3s cubic-bezier(0.7, 0, 0.3, 1);
+
+}
+
+nav ul.one li a:hover {
+    border-bottom: 10px solid #e7272d;
+}
+
+nav ul.one li a.more-nav-op {
+    position: relative;
+}
+
+nav ul.one li a span {
+    position: relative;
+    bottom: 1px;
+    left: 2px;
+}
+
+nav ul.one li a ul.inner {
+    background: white;
+    color: black;
+    border-top: 2px solid #e7272d;
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    display: none;
+    transition: all 2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+nav ul.one li a ul.inner-1,
+nav ul.one li a ul.inner-2 {
+    transition: all 2s cubic-bezier(0.7, 0, 0.3, 1);
+
+}
+
+nav ul.one li a ul.inner li {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 90px 15px 15px;
+    cursor: pointer;
+}
+
+nav ul.one li a ul.inner li:hover {
+    background-color: #e7272d;
+    color: white;
+}
+
+
+.upper-portion .left-big {
+    margin-top: 80px;
+    width: 50%;
+
+}
+
+.upper-portion h1.title {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.upper-portion .left-big p {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    color: white;
+}
+
+.menu-btn,
+.message-send {
+    padding: 15px 20px;
+    background-color: #e7272d;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-btn:hover,
+.message-send:hover {
+    background: #111;
+    color: white;
+}
+
+
+/* about section main styles */
+.credits-section {
+    padding: 70px 50px;
+    text-align: center;
+
+
+}
+.credits-section .sources {
+    text-align: left;
+}
+.credits-section .upper-about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 100px 0;
+}
+
+.credits-section .upper-about-section .first-img {
+    height: 382px;
+    width: auto;
+}
+
+.credits-section .upper-about-section .second-img {
+    height: 525px;
+    width: auto;
+
+}
+
+.credits-section .upper-about-section .upper-third-sec h2 {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.credits-section .upper-about-section .upper-third-sec p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7E8690;
+    font-family: "Open Sans", sans-serif;
+    line-height: 27.2px;
+
+}
+
+.credits-section .upper-about-section .upper-third-sec span {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    display: block;
+
+}
+
+.credits-section .chefs-section {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.credits-section .chefs-section h2 {
+    width: 60%;
+    margin: auto;
+}
+
+.credits-section .chefs-section .chefs-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.credits-section .chefs-section .chefs-cards .chef-card {
+    width: 32%;
+    text-align: left;
+}
+
+.credits-section .chefs-section .chef-card img {
+    width: 100%;
+}
+
+.credits-section .chefs-section .chefs-cards .chef-card h3 {
+    font-family: Cardo, serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.credits-section .chefs-section .chefs-cards .chef-card h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #7E8690;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.credits-section .chefs-section .chefs-cards .chef-card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #7E8690;
+    font-weight: 400;
+
+}
+
+.credits-section .credits-section-btn {
+    background: #e7272d;
+    color: #fff;
+    padding: 10px 90px 10px 30px;
+    margin-left: -116px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 0;
+}
+
+
+.cards-services {
+    margin: 0 50px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    z-index: 2;
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+.card-service {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.card-service img {
+    width: 60px;
+}
+
+.card-service .h2 {
+    font-size: 20px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+}
+
+.card-service p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+
+}
+
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    width: 60%;
+    margin: auto;
+}
+
+.cards-about {
+    margin: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.cards-about img {
+    width: 100%;
+
+
+}
+
+.card-about {
+    width: 33%;
+    text-align: left;
+}
+
+.card-about h3 {
+    font-size: 20px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    margin: 7px 0;
+
+}
+
+.card-about p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+.booking-background {
+    background: url(./assets/cta-bg.jpg);
+    height: 100vh;
+    padding: 60px;
+    margin: 0 -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.booking-background h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.booking-background h2 {
+    width: 50%;
+    color: white;
+
+}
+
+.booking-background button {
+    padding: 15px 20px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.booking-background button:hover {
+    background: #e7272d;
+    color: white;
+}
+
+.services-section {
+    margin: 200px 0;
+    text-align: center;
+}
+
+
+.services-section h2 {
+    width: 60%;
+    margin: auto;
+
+}
+
+.services-section .services-cards {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services-section .services-cards .service-card {
+    width: 32%;
+    margin: 20px 0;
+
+}
+
+.services-section .services-cards .service-card img {
+    width: 55px;
+    cursor: pointer;
+}
+
+.services-section .services-cards .service-card h3 {
+    font-family: Cardo, serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.services-section .services-cards .service-card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: #7e8690;
+
+}
+
+.customers-review {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+
+}
+
+.customers-review p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #7E8690;
+}
+
+.customers-review .comment-person {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.customers-review h4 {
+    font-family: Cardo, serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.customers-review span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #7E8690;
+}
+
+.dishes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+.dishes h2 {
+    width: 50%;
+    margin: auto;
+}
+
+.dishes .buttons-dishes {
+
+    width: 40%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dishes .buttons-dishes button {
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+    font-weight: 600;
+    font-size: 16px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.dishes .buttons-dishes button.active {
+    color: #e7272d;
+}
+
+.dishes .dishes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.dishes-in-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.dishes-in-cards .dish-card {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    gap: 10px;
+}
+
+.dishes-in-cards .dish-card img {
+    width: 150px;
+}
+
+.dishes-in-cards .dish-card .pri-tle-desc .pri-tle {
+    display: flex;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 19px;
+
+}
+
+.dishes-in-cards .dish-card .pri-tle-desc .pri-tle .price {
+    color: #e7272d;
+}
+
+.dishes-in-cards .dish-card .pri-tle-desc .desc {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+/* #2 */
+.dishes .dishes-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.dishes-in-cards-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dishes-in-cards-2 .dish-card-2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    opacity: 1;
+}
+
+.dishes-in-cards-2 .dish-card-2 img {
+    width: 100%;
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .pri-tle {
+    display: flex;
+    font-family: "Cardo", serif;
+    color: #111;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 19px;
+
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .pri-tle .price {
+    color: #e7272d;
+}
+
+.dishes-in-cards-2 .dish-card-2 .pri-tle-desc .desc {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+}
+
+/* ۔۔ */
+.dishes .full-menu {
+    padding: 15px 20px;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.dishes .full-menu:hover {
+    background-color: #e7272d;
+}
+
+.get-app {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    gap: 60px;
+}
+
+.get-app .left .imgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-app .left .imgs img {
+    width: 400px;
+}
+
+.get-app .left .imgs .img-2-get-app {
+    position: relative;
+    right: 2.2px;
+    width: 401.5px;
+}
+
+.get-app .right {
+    text-transform: capitalize;
+}
+
+.get-app .right>p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7e8690;
+    margin: 20px 0;
+
+}
+
+.get-app .right .buttons-get-app {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.get-app .right .buttons-get-app button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border: 2px solid #111;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    height: 60px;
+}
+
+.get-app .right .buttons-get-app button:hover {
+    background-color: #e7272d;
+    cursor: pointer;
+    border: 2px solid #e7272d;
+}
+
+.get-app .right .buttons-get-app button div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.get-app .right .buttons-get-app button.col-sch-oppo {
+    background-color: white;
+    color: black;
+
+
+}
+
+.get-app .right .buttons-get-app button.col-sch-oppo:hover {
+    background-color: #e7272d;
+    color: white;
+    border: 2px solid #e7272d;
+}
+
+.get-app .right .buttons-get-app button.col-sch-oppo img {
+    width: 25px;
+}
+
+.get-app .right .buttons-get-app button span {
+    font-weight: 700;
+
+}
+
+.get-app .right .buttons-get-app button img {
+    width: 40px;
+}
+
+.imgs-insta {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs-insta img {
+    width: 16%;
+}
+
+.contact-form {
+    margin: 100px 0;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.contact-form h2 {
+    margin-bottom: 30px;
+}
+
+.contact-form .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+
+}
+
+.contact-form .inputs input,
+.inputs textarea {
+    background: #fbf9f6;
+    height: 60px;
+    padding-left: 20px;
+    width: 48%;
+    margin: 6px 8px;
+}
+
+.contact-form .inputs input {
+    border: 0;
+}
+
+.contact-form .message-send {
+    margin: 20px auto;
+}
+
+.inputs textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+footer {
+    background: #151515;
+    color: #7e8690;
+    padding: 100px;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer h3,
+.highlight,
+.hours {
+    color: white;
+
+}
+
+footer .upper-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .upper-footer>div {
+    width: 30%;
+}
+
+footer h3,
+.hours {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.hours {
+    font-size: 16px;
+
+}
+
+footer .about-foot .icons-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 15px;
+}
+
+footer .about-foot .icons-bottom img,
+.icon-footer {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+footer .contact-info .contact-info-1 {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 15px 0;
+}
+
+footer .email-give {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+}
+
+footer .email-give h3 {
+    color: #7e8690;
+}
+
+footer .email-give .email-input-field-cont {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: center;
+    background: #121212;
+    padding: 5px;
+}
+
+footer .email-give .email-input-field-cont input {
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+footer .email-give .email-input-field-cont .icon-footer {
+    cursor: pointer;
+}
+
+footer .bottom-footer {
+    background-color: #121212;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .bottom-footer .right-navlinks {
+    display: flex;
+    gap: 20px;
+}
+
+footer .bottom-footer .right-navlinks span:hover {
+    color: #e7272d;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+
+    header {
+        background: #111;
+
+
+
+    }
+
+    .header {
+        padding: 15px 30px;
+    }
+
+    header nav ul.one {
+        display: none;
+
+    }
+
+    header nav .hamburger {
+        display: block;
+
+
+    }
+
+    .upper-portion {
+        height: 80vh;
+    }
+
+    .backdrop {
+        padding: 0;
+        height: 80vh;
+    }
+
+    .upper-portion .left-big {
+        width: 93%;
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .card-service {
+        padding: 20px;
+        line-height: 27.2px;
+    }
+
+    .about h2 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    .cards-about {
+        margin: 0;
+    }
+
+    .booking-background {
+        padding: 60px 0px;
+    }
+
+    .booking-background h2 {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    .dishes {
+        padding: 120px 0;
+    }
+
+    .dishes h2 {
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .dishes-in-cards {
+        justify-content: center;
+    }
+
+    .dishes-in-cards .dish-card {
+        width: 40%;
+        padding: 10px;
+
+    }
+
+    .get-app {
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+
+    .reservation-section {
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .reservation-section .left {
+        width: 100%;
+    }
+
+    .reservation-section .right {
+        width: 100%;
+    }
+
+    .dishes-in-cards-2 {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dishes-card-2 .dish-card-2 {
+        width: 80%;
+    }
+
+    .credits-section .upper-about-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .credits-section .credits-section-btn {
+        margin-left: 0;
+    }
+
+    .services-section .services-cards .service-card {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .upper-portion .left-big p {
+
+        font-size: 40px;
+
+    }
+
+    .cards-services {
+        flex-direction: column;
+    }
+
+    .card-service {
+        padding: 30px;
+    }
+
+    .cards-about {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .card-about {
+        width: 80%;
+    }
+
+    .dishes-in-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dishes-in-cards .dish-card {
+        width: 90%;
+    }
+
+    .get-app .right {
+        padding: 20px;
+    }
+
+    footer .upper-footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .upper-footer>div {
+        width: 100%;
+    }
+
+    footer .email-give .email-input-field-cont {
+        width: 100%;
+    }
+
+    footer .bottom-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .dishes .buttons-dishes {
+        gap: 15px;
+    }
+
+    .buttons-get-app {
+        flex-direction: column;
+    }
+
+    footer .bottom-footer .right-navlinks {
+        flex-wrap: wrap;
+    }
+
+    footer .email-give {
+        margin: 0;
+        margin-top: 50px;
+
+    }
+
+    .credits-section .chefs-section .chefs-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .credits-section .chefs-section .chefs-cards .chef-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-section .services-cards .service-card {
+        width: 100%;
+    }
+
+    .credits-section .chefs-section h2,
+    .services-section h2 {
+        width: 100%;
+    }
+    .customers-review{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .get-app .left .imgs img {
+        width: 300px;
+    }
+
+    .get-app .left .imgs .img-2-get-app {
+        position: relative;
+        right: 2.2px;
+        width: 301.5px;
+    }
+
+    footer {
+        padding: 65px;
+    }
+
+    .customers-review {
+        width: 80%;
+    }
+}
